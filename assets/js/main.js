@@ -1,5 +1,5 @@
 $(function() {
-    let regionsCentroid;
+    let region_points;
     
     // Initialize the map
     // Coordinates of the center of Morocco from QGIS by right clicking on the map
@@ -32,7 +32,7 @@ $(function() {
     L.geoJson(regions, {
             style: style}).addTo(map);
 
-    $.getJSON("./data/regions_centroid.json")
+    $.getJSON("./data/region_points.json")
         .done(function(data) {
             let info = processData(data);
 
@@ -53,10 +53,9 @@ $(function() {
             let properties = data.features[feature].properties;
 
             for (let attribute in properties) {
-                if (attribute !== 'id' &&
-                attribute !== 'r_nom' &&
-                attribute !== 'lat' &&
-                attribute !== 'long') {
+                if (attribute !== 'Region' &&
+                attribute !== 'X' &&
+                attribute !== 'Y') {
 
                     // Search for a specified value within an array and return its index (or -1 if not found).
                     // jQuery.inArray( value, array [, fromIndex ] )
@@ -119,7 +118,7 @@ $(function() {
             let radius = calcPropRadius(props[timestamps]);
             let popupContent = "<b>" + String(props[timestamps]) +
             " nouveaux cas</b><br>" +
-            "<i>" + props.r_nom + "<br>" +
+            "<i>" + props.Region + "<br>" +
             "</i>" +
             timestamps + "</i>" +
             " janvier 2022";

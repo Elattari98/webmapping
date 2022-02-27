@@ -133,7 +133,7 @@ $(function() {
     function calcPropRadius(attributeValue) {
         let scaleFactor = 1;
         let area = attributeValue * scaleFactor;
-        return Math.sqrt(area/Math.PI);
+        return Math.sqrt(area/Math.PI) * 0.001;
     }
 
     function createLegend(min, max) {

@@ -132,7 +132,7 @@ $(function() {
 
     function calcPropRadius(attributeValue) {
         let scaleFactor = 1;
-        let area = attributeValue * scaleFactor;
+        let area = attributeValue * scaleFactor * 0.001;
         return Math.sqrt(area/Math.PI) * 0.001;
     }
 
@@ -143,7 +143,7 @@ $(function() {
         }
 
         function roundNumber(inNumber) {
-            return (Math.round(inNumber/10) * 10);
+            return (Math.round(inNumber/10) * 0.001);
         }
 
         let legend = L.control({position: 'bottomright'});

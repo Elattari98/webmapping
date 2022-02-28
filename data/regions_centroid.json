@@ -5,7 +5,7 @@
 "features": [
 { "type": "Feature", "properties": { "13": 40.8147, "14": 43.3757, "id": 7, "lat": -9.9266861, "long": 28.31181546, "r_nom": "Guelmim Oued Noun" }, "geometry": { "type": "Point", "coordinates": [ -9.926686105005, 28.311815461124507 ] } },
 { "type": "Feature", "properties": { "13": 398.3659, "14": 452.0569, "id": 5, "lat": -8.45798263, "long": 31.70534778, "r_nom": "Marrakech Safi" }, "geometry": { "type": "Point", "coordinates": [ -8.457982637166971, 31.705347787194583 ] } },
-{ "type": "Feature", "properties": { "13": 589.0609, "14": 686.1739, "id": 8, "lat": -7.77899442, "long": 33.00699585, "r_nom": "Grand Casa Settat" }, "geometry": { "type": "Point", "coordinates": [ -7.778994423744864, 33.006995859509892 ] } },
+{ "type": "Feature", "properties": { "13": 589.0608, "14": 686.1739, "id": 8, "lat": -7.77899442, "long": 33.00699585, "r_nom": "Grand Casa Settat" }, "geometry": { "type": "Point", "coordinates": [ -7.778994423744864, 33.006995859509892 ] } },
 { "type": "Feature", "properties": { "13": 402.3217, "14": 458.0866, "id": 3, "lat": -6.2045783, "long": 34.06862195, "r_nom": "Rabat Sale Kenitra" }, "geometry": { "type": "Point", "coordinates": [ -6.204578305498119, 34.068621959228139 ] } },
 { "type": "Feature", "properties": { "13": 230.7566, "14": 252.0776, "id": 12, "lat": -6.30463294, "long": 32.46578719, "r_nom": "Beni Mellal Khenifra" }, "geometry": { "type": "Point", "coordinates": [ -6.304632945045121, 32.46578719704511 ] } },
 { "type": "Feature", "properties": { "13": 232.4142, "14": 267.6847, "id": 2, "lat": -8.34418278, "long": 29.92541112, "r_nom": "Souss Massa" }, "geometry": { "type": "Point", "coordinates": [ -8.344182782825184, 29.925411121219973 ] } },

@@ -166,7 +166,7 @@ $(function() {
                     "height: " + (currentRadius * 2) + "px; " +
                     "margin-left: " + margin + "px");
 
-                $(legendCircle).append("<span class='legendValue'>" + classes[i] + ' <b><i>cas</i></b>' +"</span>");
+                $(legendCircle).append("<span class='legendValue'>" + classes[i] + ' <b><i>personnes</i></b>' +"</span>");
                 $(symbolsContainer).append(legendCircle);
                 lastRadius = currentRadius;
             }

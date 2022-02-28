@@ -202,12 +202,12 @@ $(function() {
                 'type': 'range',
                 'max': timestamps[timestamps.length - 1],
                 'min': timestamps[0],
-                'step': 1,
+                'step': 10,
                 'value': String(timestamps[0])})
                 .on('input change', function() {
-                    const month = " janvier 2022";
+                    const month = " janvier 20";
                     updatePropSymbols($(this).val().toString());
-                    $(".temporal-legend").text(this.value + month);
+                    $(".temporal-legend").text(month + this.value);
                 });
                 return slider;
     }

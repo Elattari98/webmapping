@@ -192,26 +192,26 @@ $(function() {
             $(slider).attr({
                 'type': 'range',
                 'max': timestamps[timestamps.length - 1],
-                'min': timestamps[0] - 9,
+                'min': timestamps[0],
                 'step': 10,
                 'value': String(timestamps[0] - 9)})
                 .on('input change', function() {
-                    const month = " RGPH";
+                    const month = " RGPH ";
                     updatePropSymbols($(this).val().toString());
                     $(".temporal-legend").text(month + this.value);
                 });
                 return slider;
     }
     sliderControl.addTo(map);
-    createTemporalLegend(timestamps[0] - 9);
+    createTemporalLegend(timestamps[0]);
     }
 
     function createTemporalLegend(startTimestamp) {
         let temporalLegend = L.control({position: 'bottomleft'});
         temporalLegend.onAdd = function() {
             let output = L.DomUtil.create('output', 'temporal-legend');
-            $(output).append(" RGPH");
-		$(output).text(startTimestamp);
+            $(output).text(startTimestamp);
+		$(output).append(" RGPH ");
                         return output;
     }
 

@@ -180,7 +180,7 @@ $(function() {
         legend.addTo(map);
     }
 
-      function createSliderUI(timestamps) {
+        function createSliderUI(timestamps) {
         let sliderControl = L.control({position: 'bottomleft'});
         sliderControl.onAdd = function() {
             let slider = L.DomUtil.create('input', 'range-slider');
@@ -193,12 +193,12 @@ $(function() {
                 'type': 'range',
                 'max': timestamps[timestamps.length - 1],
                 'min': timestamps[0],
-                'step': 10,
-                'value': String(timestamps[0] - 9)})
+                'step': 1,
+                'value': String(timestamps[0])})
                 .on('input change', function() {
                     const month = " RGPH ";
                     updatePropSymbols($(this).val().toString());
-                    $(".temporal-legend").text(month + this.value);
+                    $(".temporal-legend").text(this.value + month);
                 });
                 return slider;
     }
@@ -211,8 +211,11 @@ $(function() {
         temporalLegend.onAdd = function() {
             let output = L.DomUtil.create('output', 'temporal-legend');
             $(output).text(startTimestamp);
-		$(output).append(" RGPH ");
-                        return output;
+            $(output).append(" RGPH ");
+            return output;
+    }
+
+    temporalLegend.addTo(map);
     }
 
     temporalLegend.addTo(map);

@@ -16,11 +16,11 @@ $(function() {
 
     function style() {
     return {
-        fillColor: '#E5E5E3',
+        fillColor: '#ffffe6',
         weight: 1,
         opacity: 1,
-        color: '#000000',
-        dashArray: '4',
+        color: '#808080',
+        dashArray: '0',
         fillOpacity: 0.7
         };
     }

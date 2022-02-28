@@ -232,6 +232,6 @@ $(function() {
             this._div.innerHTML = '<h4>Carte Population des régions, Maroc</h3>' + '<br>' + 'Merci de mettre le curseur sur un symbole';
         };
 
-        info.addTo(map); 
+        info.addTo(map);
     }
 });

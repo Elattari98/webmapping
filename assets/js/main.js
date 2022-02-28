@@ -166,7 +166,7 @@ $(function() {
                     "height: " + (currentRadius * 2) + "px; " +
                     "margin-left: " + margin + "px");
 
-                $(legendCircle).append("<span class='legendValue'>" + classes[i] + ' <b><i>personnes</i></b>' +"</span>");
+                $(legendCircle).append("<span class='legendValue'>" + classes[i] + ' <b><i>P</i></b>' +"</span>");
                 $(symbolsContainer).append(legendCircle);
                 lastRadius = currentRadius;
             }
@@ -180,7 +180,7 @@ $(function() {
         legend.addTo(map);
     }
 
-        function createSliderUI(timestamps) {
+      function createSliderUI(timestamps) {
         let sliderControl = L.control({position: 'bottomleft'});
         sliderControl.onAdd = function() {
             let slider = L.DomUtil.create('input', 'range-slider');
